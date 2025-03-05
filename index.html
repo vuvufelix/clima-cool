@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima Cool</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <main id="app-container">
+        <section id="search-info">
+            <h1>Veja o clima da sua cidade</h1>
+            <div id="search-container">
+                <form id="textForm" autocomplete="off">
+                    <img src="icon map/mobile/icons8-gps-50.png" alt="localização" id="gps">
+                    <input type="text" id="getName" placeholder="cidade">
+                    <button type="submit" id="send"><img src="icon map/mobile/icons8-pesquisar-50.png" alt="pesquisa da região"></button>
+                </form>
+            </div>
+            <span id="error"></span>
+        </section>
+        <section id="content-container">
+            <div id="content">
+                <div>
+                    <h2 id="city">  </h2>
+                    <span id='code'></span>
+                </div>
+                <div id="desktop-container">
+                    <img src="" alt="Icone representando o clima" id="clima">
+                    <div>
+                        <div id="clima-info"></div>
+                        <span>°C</span>
+                    </div>
+                    <span id="descricion"></span>
+                </div>
+                <div id="desktop-information">
+                    <div>
+                        <img src="icon map/icons8-wind-50.png" alt="valor do vento">
+                        <div class="mensage" id="vento"></div>
+                    </div>
+                    <div>
+                        <img src="icon map/icons8-dew-point-50 (1).png" alt="valor da temperatura">
+                        <div class="mensage" id="umidade"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
